@@ -17,3 +17,17 @@ A simple web-based lottery for Guild Wars 2.
 [] Allow players to be removed
 
 [] Draw lottery, randomly choose a ticket and the owner wins
+
+## Running the Development Server
+
+Install dependencies if you haven't yet
+
+```
+bundle install
+```
+
+Run dev server
+
+```
+bundle exec rackup
+```
