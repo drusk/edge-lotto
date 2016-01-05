@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="EdgeLottoApp">
+    <head>
+        <!-- TODO download and include angular.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+        <script src="edgelotto.js"></script>
+        <!-- TODO custom CSS <link rel="stylesheet" href="edgelotto.css"> -->
+    </head>
+
+    <body>
+        <h2>Edge Lotto</h2>
+
+        <div ng-controller="EdgeLottoController as lotto">
+            <ul>
+                <li ng-repeat="player in lotto.players">{{player}}</li>
+            </ul>
+
+            <form ng-submit="lotto.addPlayer()">
+                <input type="text" ng-model="lotto.playerName"
+                    placeholder="Add a new player here">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </body>
+</html>
