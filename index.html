@@ -2,6 +2,8 @@
 <html ng-app="EdgeLottoApp">
     <head>
         <script src="vendor/angular.1.4.8.min.js"></script>
+        <link rel="stylesheet" href="vendor/bootstrap-3.3.6/css/bootstrap.min.css">
+        <script src="vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
 
         <script src="edgelotto.js"></script>
         <!-- TODO custom CSS <link rel="stylesheet" href="edgelotto.css"> -->
@@ -11,7 +13,7 @@
         <h2>Edge Lotto</h2>
 
         <div ng-controller="EdgeLottoController as lotto">
-            <table>
+            <table class="table table-bordered table-striped table-hover">
                 <tr>
                     <th>Player Name</th>
                     <th>Number of Tickets</th>
