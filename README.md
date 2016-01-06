@@ -4,9 +4,9 @@ A simple web-based lottery for Guild Wars 2.
 
 ## Features
 
-[] Enter a list of player names
+[x] Enter a list of player names
 
-[] Enter number of tickets each player has bought
+[x] Enter number of tickets each player has bought
 
 [] Enter ticket value in gold/silver
 
