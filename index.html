@@ -12,13 +12,26 @@
         <h2>Edge Lotto</h2>
 
         <div ng-controller="EdgeLottoController as lotto">
-            <ul>
-                <li ng-repeat="player in lotto.players">{{player}}</li>
-            </ul>
+            <table>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Number of Tickets</th>
+                </tr>
+                <tr ng-repeat="player in lotto.players">
+                    <td>{{player.name}}</td>
+                    <td>{{player.numTickets}}</td>
+                </tr>
+            </table>
+
+            <hr />
 
             <form ng-submit="lotto.addPlayer()">
                 <input type="text" ng-model="lotto.playerName"
-                    placeholder="Add a new player here">
+                    placeholder="Player name"
+                    required>
+                <input type="number" ng-model="lotto.numTickets"
+                    placeholder="Tickets"
+                    required>
                 <input type="submit" value="Add">
             </form>
         </div>

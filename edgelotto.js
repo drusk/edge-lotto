@@ -5,8 +5,14 @@ angular.module("EdgeLottoApp", [])
         lotto.players = [];
 
         lotto.addPlayer = function() {
-            lotto.players.push(lotto.playerName);
+            lotto.players.push(
+                {
+                    name: lotto.playerName,
+                    numTickets: lotto.numTickets
+                }
+            );
             lotto.playerName = "";
+            lotto.numTickets = 0;
         };
     }
 );
