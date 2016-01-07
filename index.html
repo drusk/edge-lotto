@@ -10,31 +10,35 @@
     </head>
 
     <body>
-        <h2>Edge Lotto</h2>
+        <div class="container">
+            <div class="jumbotron">
+                <h2>Edge Lotto</h2>
+            </div>
 
-        <div ng-controller="EdgeLottoController as lotto">
-            <table class="table table-bordered table-striped table-hover">
-                <tr>
-                    <th>Player Name</th>
-                    <th>Number of Tickets</th>
-                </tr>
-                <tr ng-repeat="player in lotto.players">
-                    <td>{{player.name}}</td>
-                    <td>{{player.numTickets}}</td>
-                </tr>
-            </table>
+            <div ng-controller="EdgeLottoController as lotto">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Number of Tickets</th>
+                    </tr>
+                    <tr ng-repeat="player in lotto.players">
+                        <td>{{player.name}}</td>
+                        <td>{{player.numTickets}}</td>
+                    </tr>
+                </table>
 
-            <hr />
+                <hr />
 
-            <form ng-submit="lotto.addPlayer()">
-                <input type="text" ng-model="lotto.playerName"
-                    placeholder="Player name"
-                    required>
-                <input type="number" ng-model="lotto.numTickets"
-                    placeholder="Tickets"
-                    required>
-                <input type="submit" value="Add">
-            </form>
+                <form ng-submit="lotto.addPlayer()">
+                    <input type="text" ng-model="lotto.playerName"
+                        placeholder="Player name"
+                        required>
+                    <input type="number" ng-model="lotto.numTickets"
+                        placeholder="Tickets"
+                        required>
+                    <input type="submit" value="Add">
+                </form>
+            </div>
         </div>
     </body>
 </html>
