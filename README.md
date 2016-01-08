@@ -1,6 +1,8 @@
 # edge-lotto
 
-A simple web-based lottery for Guild Wars 2.
+A simple web-based lottery for Guild Wars 2. It is implemented entirely in
+client-side HTML, CSS and JavaScript. Therefore it does not need a server,
+and can be run locally by opening ```index.html``` in your web browser.
 
 ## Features
 
