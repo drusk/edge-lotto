@@ -26,6 +26,12 @@
                     <tr ng-repeat="player in lotto.players">
                         <td>{{player.name}}</td>
                         <td>{{player.numTickets}}</td>
+                        <td>
+                            <button type="submit" class="btn btn-danger"
+                                ng-click="lotto.removePlayer(player)">
+                                <span class="glyphicon glyphicon-remove"
+                                    aria-hidden="true"></span>Remove
+                            </button>
                     </tr>
                 </table>
 

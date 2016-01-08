@@ -14,5 +14,10 @@ angular.module("EdgeLottoApp", [])
             lotto.playerName = "";
             lotto.numTickets = 0;
         };
+
+        lotto.removePlayer = function(player) {
+            var index = lotto.players.indexOf(player);
+            lotto.players.splice(index, 1);
+        };
     }
 );
